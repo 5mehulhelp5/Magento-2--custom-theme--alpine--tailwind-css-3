@@ -1,0 +1,18 @@
+{
+  "name": "custom/luma-tailwind",
+  "description": "Child theme de Luma con Tailwind",
+  "require": {
+    "php": "~7.4.0||~8.1.0"
+  },
+  "type": "magento2-theme",
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ]
+  }
+}
