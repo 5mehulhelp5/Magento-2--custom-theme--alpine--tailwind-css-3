@@ -24,18 +24,16 @@ class Data extends AbstractHelper
      */
         public function getJsonData()
     {
-        // Obtener la ruta configurada desde admin
+        // Get path configure in Admin
         $relativePath = $this->scopeConfig->getValue(
             self::XML_PATH_JSON_FILE,
             \Magento\Store\Model\ScopeInterface::SCOPE_STORE
         );
 
          $filePath = BP . '/' . ltrim($relativePath, '/');
-        echo $filePath;
 
-        // Convertir a ruta absoluta dentro de Magento
+        // Convert to absolute path in Magento
         if ($filePath && strpos($filePath, '/') !== 0) {
-            // Ruta relativa → añadimos BP
             $filePath = BP . '/' . ltrim($filePath, '/');
         }
 
