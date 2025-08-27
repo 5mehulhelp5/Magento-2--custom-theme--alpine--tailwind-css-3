@@ -41,11 +41,7 @@ class UpdateProducts
     public function execute()
     {
        
-        // Set the area code to 'adminhtml' to ensure stock and product APIs work correctly
-        // when running this cron or script from CLI. This prevents "Area code is not set" errors.
-        
-        $this->appState->setAreaCode('adminhtml');
-       
+    
         $this->logger->info("Cron started");
 
         $enabled = $this->scopeConfig->getValue('product_updater/general/enable_cron');

@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="default">
         <job name="update_products_from_json" instance="Custom\ProductUpdater\Cron\UpdateProducts" method="execute">
-            <schedule>*/15 * * * *</schedule>
+            <schedule>*/1 * * * *</schedule>
         </job>
     </group>
 </config>
