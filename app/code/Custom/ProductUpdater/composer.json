@@ -1,0 +1,20 @@
+{
+  "name": "custom/module-product-updater",
+  "description": "Custom module to update products from JSON via cron",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "require": {
+    "php": ">=7.4",
+    "magento/framework": "103.*",
+    "magento/module-catalog": "104.*",
+    "magento/module-catalog-inventory": "100.*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Custom\\ProductUpdater\\": ""
+    }
+  }
+}
